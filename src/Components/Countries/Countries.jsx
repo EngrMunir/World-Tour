@@ -4,7 +4,7 @@ import './countries.css';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
-    const [visitedCountries, setVisitedCountries]= useState([])
+    const [visitedCountries, setVisitedCountries]= useState([]);
     const [visitedFlags, setVisitedFlags] = useState([]);
 
     useEffect(()=>{
@@ -20,6 +20,7 @@ const Countries = () => {
     }
 
     const handleVisitedFlags= flag =>{
+        
         const newVisitedFlags = [...visitedFlags, flag];
         setVisitedFlags(newVisitedFlags);
     }
